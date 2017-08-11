@@ -11,6 +11,6 @@ rcode FileName LangName
 
 ```bash
 git clone https://github.com/pouya-abbasian/readycode.git
-cd readycode ; chmod +x install.sh
-./install.sh
+cd readycode ; chmod +x installer.sh
+./installer.sh
 ```
