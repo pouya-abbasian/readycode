@@ -6,9 +6,7 @@ shebang_dir="#!$dir"
 if [ "$1" ] ; then ##Check Argument
 	if [ -f "$1" ] ; then ##Check File Avalibale or not!
 		read -p "This file is avalibale. Would you like to replace it? [Y/n]" q
-		if [ $q=="y" ] ; then
-			echo -e "$shebang_dir\n" > "$1" ; chmod +x "$1"
-		elif [ $q=="Y" ] ; then
+		if [ $q=="y" ] || [ $q="Y" ] ; then
 			echo -e "$shebang_dir\n" > "$1" ; chmod +x "$1"
 		else
 			echo -e "Abort!\nByeBye"
