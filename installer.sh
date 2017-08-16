@@ -1,6 +1,7 @@
 #!/bin/bash
 ##Installer for ReadyCode
 install(){
+	chmod +x rcode
 	sudo cp rcode /bin
 	sudo chmod 755 /bin/rcode
 }
